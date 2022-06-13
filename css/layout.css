@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/*
+ 
+   Layout Style Sheet
+   Author: Sim Zhi Ren Tenzin
+   Date: 16 May 2021
+   
+   Filename: layout.css
+
+*/
+
+body {
+	margin: 0 auto;
+}
+/*Header Layout*/
+body > header {
+	margin: 0;
+	width: 100%;
+	overflow: hidden;
+	background-image: url(/images/homeMoonlight.jpeg);
+	background-position-x: center;
+	background-position-y: top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	padding-top: 40%;
+}
+
+/*Heading Layout*/
+header > h1 {
+	margin: 0;
+	padding: 2vw;
+    display: block;
+    font-size: 5vw;
+    font-weight: bold;
+	position: absolute;
+    text-align: center;
+	top: 3vw;
+	width: 100%;
+
+}
+@media only screen and (max-width: 576px) {
+	header > h1{
+		font-size: 9vw;
+	}
+}
+
+/*Achievement table layout*/
+@media only screen and (min-width: 576px) {
+	.yearCol{
+		width: 80px;
+	}
+}
+table#achievements{
+	width: 95%;
+	height: auto;
+	text-align: center;
+	margin: 2.5%;
+}
+
+table#achievements ul{
+	text-align: left;
+	list-style-position: inside;
+	margin: 5px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Feedback Page
+        Author: Sim Zhi Ren Tenzin
+        Date 1 June 2021
+
+        Filename: feedback.html
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/feedbackForm.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" defer></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+
+    <!--Javascript-->
+    <script src="../javascripts/fadeHeader.js" defer></script>
+    
+    <!--CSS Styles-->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!--Header Image-->
+    <header>
+        <h1>Feedback</h1>
+    </header>
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse justify-content-stretch" id="navbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="../index.html"><div class="nav-link">About Me</div></a></li>
+                <li class="nav-item"><a href="secSchExp.html"><div class="nav-link">Secondary Sch Experience</div></a></li>
+                <li class="nav-item"><a href="socExp.html"><div class="nav-link">SoC Experience</div></a></li>
+                <li class="nav-item"><a href="careerProspect.html"><div class="nav-link">Career Prospect</div></a></li>
+                <li class="nav-item"><a href="feedback.html"><div class="nav-link">Feedback</div></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--Heading Title-->
+    <div class="container-fluid px-3 px-sm-5">
+        <h2 class="my-4 p-2">Please provide your feedback below:</h2>
+    </div>
+    <!--Form-->
+    <form class="px-3 px-sm-5">
+        <div class="card d-inline-block col-12 col-xl-6 m-0 mb-xl-5 float-xl-left bg-transparent">
+            <!--Title Select-->
+            <div class="form-group">
+                <label for="title" id="titleLabel">Title*:</label>
+                <select name="title" id="title" class="section" required>
+                    <option value="">Select</option>
+                    <option value="Dr">Dr.</option>
+                    <option value="Mr">Mr.</option>
+                    <option value="Ms">Ms.</option>
+                </select>
+            </div>
+            <!--Name Input-->
+            <div class="form-group">
+                <label for="name">Name*:</label>
+                <input id="name" type="text" placeholder="Name" class="shortText w-100 p-1" required/>
+            </div>
+            <!--Email Input-->
+            <div class="form-group">
+                <label for="email">Email Address*: </label><br/>
+                <input id="email" type="email" placeholder="Email Address" class="shortText w-100 p-1" required/>
+            </div>
+            <!--Phone Number Input-->
+            <div class="form-group">
+                <label for="phone">Phone number*: </label><br/>
+                <input id="phone" type="number" placeholder="Phone number" class="shortText w-100 p-1" required/>
+            </div>
+            <!--User Experience Rating-->
+            <div class="form-group row m-0 p-0">
+                <label id="userExperience" class="p-0 col-12 col-lg-4 mb-2 col-xl-12">User Experience*: </label>
+                
+                    <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-12">
+                        <label for="bad" class="rating p-0 float-left">Bad: </label>
+                        <input id="bad" class="selection p-0 float-right float-sm-left float-xl-right" type="radio" value="bad" name="rating" required>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-12">
+                        <label for="ok" class="rating float-left">Okay: </label>
+                        <input id="ok" class="selection float-right float-sm-left float-xl-right" type="radio" value="acceptable" name="rating" required>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-12">
+                        <label for="good" class="rating float-left">Good: </label>
+                        <input id="good" class="selection float-right float-sm-left float-xl-right" type="radio" value="good" name="rating" required>
+                    </div>
+            </div>
+        </div>    
+        <div class="card d-inline-block col-12 col-xl-6 float-xl-right m-0 mb-xl-5 bg-transparent">
+
+            <!--More Feedback Input-->
+            <div class="form-group">
+                <label for="feedback" id="feedbackLabel">More Feedback: </label>
+                <textarea id="feedback" placeholder="More feedback (optional)" class="paragraphText w-100 p-1"></textarea>
+            </div>
+            <!--Subscribe to Newsletter Checkbox-->
+            <div class="newsletter form-group">
+                <label for="newsletter" id="newsletterLabel" class="float-left">Subscribe to my newsletter: </label>
+                <input id="newsletter" class="checkbox float-left" type="checkbox">
+            </div> 
+        </div>
+        <!--Submit Button-->
+        <div class="submit w-100 form-group row justify-content-center">
+            <input type="submit" value="Submit" id="submit" class="ml-4 px-3 py-1"/>
+        </div>
+    </form>
+    <!--Footer-->
+    <footer class="w-100 float-left">
+        &copy;ten._.S &#8226; Email: <a href="mailto:tenzinsim@icloud.com">tenzinsim@icloud.com</a>  &#8226; Instagram: <a href="https://www.instagram.com/ten._.s/">@ten._.S</a>
+    </footer>
+</body>
+</html>

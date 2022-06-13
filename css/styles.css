@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+/*
+ 
+   Styles Style Sheet
+   Author: Sim Zhi Ren Tenzin
+   Date: 16 May 2021
+   
+   Filename: styles.css
+
+*/
+
+/*Declare Font*/
+@font-face {
+    font-family: Quicksand;
+    src: url('Quicksand-Regular.woff') format('woff'), url('Quicksand-Regular.ttf') format('truetype');
+}
+
+/*Body styles*/
+body{
+    /*background-color: rgb(168,197,217);*/
+    background-color: rgb(0, 30, 40);
+}
+
+/*Card Style*/
+div.card{
+    border: none;
+}
+/*Heading Style*/
+header h1{
+    color: white;
+}
+
+div h2 {
+    color: white;
+    background-image: linear-gradient(to right, rgb(70,37,35),rgb(99,56,54));
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+}
+div h3 {
+    color: white;
+    background-image: linear-gradient(to right, rgb(12,67,94),rgb(51,106,133));
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+h1{
+    font-family: Quick-sand, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    text-align: left;
+    
+}
+
+/*Image styles*/
+img{
+    border-radius: 20px;
+}
+section > img{
+    border: 3px solid rgb(72,80,81);
+}
+img.portrait{
+    border: 5px solid rgb(72,80,81);
+}
+img.landscape{
+    border: 5px solid rgb(72,80,81);
+}
+
+
+/*Photo Gallery*/
+figure#photoGallery{
+    border: 3px solid rgb(72,80,81);
+    font-size: 25px;
+    border-radius: 15px;
+}
+
+figure#photoGallery img{
+    border: 3px solid rgb(72,80,81);
+    border-radius: 10px;
+}
+
+figure#photoGallery p{
+    /*color: rgb(72,80,81);*/
+    color: lightcoral;
+    font-size: 20px;
+    margin: 0;
+}
+
+figure#photoGallery a{
+    text-decoration: none;
+    color: lightblue;
+}
+
+figure#photoGallery img#igLogo{
+    border: none;
+    border-radius: 0;
+}
+/*Achievement table Style*/
+table#achievements{
+    border-collapse: separate;
+	border: 3px solid rgb(99,56,54);
+	/*background-color:aliceblue;*/
+    border-radius: 6px;
+}
+table#achievements td{
+	border: 3px solid darkslategray;
+    border-radius: 2px;
+}
+/*Video Style*/
+div.videoWrapper{
+    background-color: black; /*Black background for "cinema theatre" effect*/
+	border: 2px solid darkslategray;
+    border-radius: 6px;
+}
+/*Paragraph Style*/
+div > p{ 
+    font: 1.6em/1.5em Quicksand, Verdanda, Geneva, sans-serif;
+    color: lightpink;
+}
+section > p{
+    text-align: left;
+    font: 1.2em/1.2em Quicksand, Verdanda, Geneva, sans-serif;
+    color: darkslategray; 
+}
+
+/*Section Style*/
+section.card {
+    border: 3px solid rgb(51,106,133);
+	border-radius: 20px;
+	background-color: rgb(230, 205, 215);
+}
+section img{
+    border-radius: 12px;
+}
+
+/*Form Style*/
+form select{
+    background-color: aliceblue;
+    border-color: rgb(99,56,54);
+    border-width: 2px;
+    border-radius: 3px;
+}
+form label{
+    color: lightcoral;
+    font-size: 25px;
+}
+form input.shortText{
+    background-color: aliceblue;
+	border-color: darkgoldenrod;
+}
+form textarea.paragraphText{
+    background-color: aliceblue;
+    border-width: 3px;
+	border-color: rgb(99,56,54);
+    font-size: 20px;
+}
+form input#submit{
+    background-color: aliceblue;
+    border-color: rgb(72,80,81);
+}
+/*Pen Style*/
+img#pen{
+    transform:rotate(145deg);
+}
+  
+/*Footer style*/
+body > footer {
+    background-color: black;
+    color: white;
+    color: rgba(255, 255, 255, 0.7);
+    font: normal small-caps bold 0.9em/3em Quicksand, Verdanda, Geneva, sans-serif;
+    text-align: center;
+}
+body > footer a{
+    color: rgba(255, 255, 255, 0.7);
+}
+

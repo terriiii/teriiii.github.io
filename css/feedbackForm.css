@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/*
+ 
+   Feedback Form Layout Style Sheet
+   Author: Sim Zhi Ren Tenzin
+   Date: 1 June 2021
+   
+   Filename: feedbackForm.css
+
+*/
+
+/*Form Layout*/
+
+form textarea.paragraphText{
+	min-height: 300px;
+	max-height: 500px;
+
+}
+
+form input.selection{
+	width: 40px;
+	height: 30px;
+	margin: 7px 0 0 0;
+}
+
+form input.checkbox{
+	width: 30px;
+	height: 30px;
+	margin-top: 5px;
+	margin-left: 5px;
+
+}
+
+form input#submit{
+	margin-top: 20px;
+}
+/*Sets Newsletter Checkbox and Label size to 5vw for small displays*/
+@media only screen and (max-width: 400px) {
+	form label#newsletterLabel{
+		font-size: 5vw;
+	}
+	form input.checkbox{
+		width: 5vw;
+		height: 5vw;
+		margin-top: 5px;
+		margin-left: 5px;
+	}
+}
