@@ -27,18 +27,28 @@ function multiplyMatrix(a, b) {
       calculatedMatrix: new Array(),
       moveDown: function(){
           this.yOffset = window.pageYOffset/1.45;
+          if (this.yOffset>1350){this.yOffset=1350}
           this.yOffsetMatrix = [[1,0,0],[0,1,this.yOffset],[0,0,1]];
       },
       scrollRotate: function(){
-          if (window.pageYOffset < this.minimumOffset){
-              this.rotation  = 145;
-          }else if ((145 + (window.pageYOffset-this.minimumOffset)/6) < 330){
-              this.rotation = 145 + (window.pageYOffset-this.minimumOffset)/6;
-          }else{
-              this.rotation  = 330;
-          }
-          var rotationRad = this.rotation*Math.PI/180
-          this.rotationMatrix = [[Math.cos(rotationRad),-Math.sin(rotationRad),0],[Math.sin(rotationRad),Math.cos(rotationRad),0],[0,0,1]];
+        //   if (window.pageYOffset < this.minimumOffset){
+        //       this.rotation  = 145;
+        //   }else if ((145 + (window.pageYOffset-this.minimumOffset)/6) < 330){
+        //       this.rotation = 145 + (window.pageYOffset-this.minimumOffset)/6;
+        //   }else{
+        //       this.rotation  = 330;
+        //   }
+        //   var rotationRad = this.rotation*Math.PI/180
+        //   this.rotationMatrix = [[Math.cos(rotationRad),-Math.sin(rotationRad),0],[Math.sin(rotationRad),Math.cos(rotationRad),0],[0,0,1]];
+            if (window.pageYOffset < this.minimumOffset){
+                this.rotation  = 145;
+            }else if ((145 + (window.pageYOffset-this.minimumOffset)/6) < 330){
+                this.rotation = 145 + (window.pageYOffset-this.minimumOffset)/6;
+            }else{
+                this.rotation  = 330;
+            }
+            var rotationRad = this.rotation*Math.PI/180
+            this.rotationMatrix = [[Math.cos(rotationRad),-Math.sin(rotationRad),0],[Math.sin(rotationRad),Math.cos(rotationRad),0],[0,0,1]];
       },
       movePen: function(){
           

@@ -111,6 +111,7 @@ div.videoWrapper{
 /*Paragraph Style*/
 div > p{ 
     font: 1.6em/1.5em Quicksand, Verdanda, Geneva, sans-serif;
+    font-weight: bold;
     color: lightpink;
 }
 section > p{
