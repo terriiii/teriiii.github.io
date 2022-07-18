@@ -28,7 +28,8 @@ div.card{
 }
 /*Heading Style*/
 header h1{
-    color: white;
+    color: lightcoral;
+    text-shadow: 3px 3px 3px black,-2px -2px 1px white;
 }
 
 div h2 {
