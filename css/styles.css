@@ -19,7 +19,8 @@
 /*Body styles*/
 body{
     /*background-color: rgb(168,197,217);*/
-    background-color: rgb(0, 30, 40);
+    /* background-color: rgb(0, 30, 40); */
+    background-color: rgb(255, 255, 255s);
 }
 
 /*Card Style*/
@@ -28,7 +29,7 @@ div.card{
 }
 /*Heading Style*/
 header h1{
-    color: lightcoral;
+    color: darkslategrey;
     text-shadow: 3px 3px 3px black,-2px -2px 1px white;
 }
 
@@ -79,6 +80,7 @@ figure#photoGallery img{
 figure#photoGallery p{
     /*color: rgb(72,80,81);*/
     color: lightcoral;
+    /* color: black; */
     font-size: 20px;
     margin: 0;
 }
@@ -113,7 +115,8 @@ div.videoWrapper{
 div > p{ 
     font: 1.6em/1.5em Quicksand, Verdanda, Geneva, sans-serif;
     font-weight: bold;
-    color: lightpink;
+    color: black;
+    /* color: lightpink; */
 }
 section > p{
     text-align: left;
@@ -159,6 +162,10 @@ form input#submit{
 /*Pen Style*/
 img#pen{
     transform:rotate(145deg);
+}
+
+img#logo{
+    filter: invert(0.8);
 }
   
 /*Footer style*/
